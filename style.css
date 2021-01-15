@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 16px;
+}
+
+#container{
+    display: flex;
+    width: 80vw;
+}
+
+#info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.try{
+    color: white;
+    background-color: hsl(248, 32%, 49%) ;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 0 ;
+    margin: 5%;
+    box-shadow: 0 5px 5px hsl(247, 18%, 10%);
+}
+
+p span{
+    font-size: 11px;
+}
+
+#box{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin: 5%;
+}
+
+input{
+    margin-bottom: 15px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 3px;
+    padding: 5px 15px;
+    display: block;
+    width: 100%;
+    outline: none;
+    
+}
+
+input:focus{
+    border: 1px solid hsl(249, 10%, 26%) ;
+    outline: none;
+}
+
+button{
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 5px 5px hsl(154, 55%, 66%);
+}
+
+button:hover{
+    opacity: 0.7;
+    transition: 500ms;
+}
+
+.agreement{
+    font-size: 11px;
+    color: hsl(246, 25%, 77%);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.terms{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.errorMessage{
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+
+}
+
+
+
+/* Responsive design */
+@media only screen and (max-width: 1190px){
+    #container{
+        width: 90vw;
+   }
+
+   #info{
+       padding-right: 50px;
+   }
+   
+   h1{
+       font-size: 50px;
+   }
+
+}
+
+/* tablet size */
+@media only screen and (max-width: 1024px){
+
+    body{
+        height: 90vh;
+    }
+
+    #container{
+         width: 90vw;
+         flex-direction: column;
+         margin-top: 15%;
+    }
+
+    #info{
+        padding-right: 50px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+    
+    h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .try{
+        margin: 5% 0;
+        width: 85vw;
+        margin: 70px 0 20px 0;
+    }
+
+    #box{
+        padding: 15px 20px;
+        margin: 5% 0;
+        width: 85vw;
+    }
+}
+
+@media only screen and (max-width: 414px){
+
+    body{
+        height: 90vh;
+    }
+
+    #container{
+        flex-direction: column;
+        width: 100vw;
+        height: 90vh;
+    }
+
+    #info{
+        width: 100%;
+        margin-left: 6%;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    #inputDetails{
+        
+        padding-right: 0px;
+        margin-left: 3%;
+    }
+
+    .try{
+        margin: 50px 0 30px 0;
+        box-shadow: 0 5px 5px hsl(247, 18%, 10%);
+        width: 90vw;
+    }
+
+    #box{
+        width: 90vw;
+        margin: 5% 3%;
+    }
+}
